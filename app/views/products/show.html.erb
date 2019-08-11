@@ -1,0 +1,29 @@
+<h1>Detalle de producto</h1>
+<div>
+  <label>Nombre:</label>
+  <strong><%= @product.name %></strong>
+</div>
+<div>
+  <label>Descripción:</label>
+  <strong><%= @product.description %></strong>
+</div> <div>
+  <label>Cantidad:</label>
+  <strong><%= @product.quantity %></strong>
+</div>
+<div>
+  <label>Precio:</label>
+  <strong><%= @product.price %></strong>
+</div>
+<div>
+<%= link_to 'Editar', edit_product_path(@product) %>
+<%= link_to 'Eliminar', product_path(@product), method: :delete %>
+</div>
+
+
+
+
+
+
+
+
+
